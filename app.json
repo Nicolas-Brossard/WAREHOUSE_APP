@@ -1,0 +1,12 @@
+{
+  "name": "WAREHOUSE_APP",
+  "displayName": "WAREHOUSE_APP",
+  "expo": {
+    "name": "WAREHOUSE_APP",
+    "slug": "WAREHOUSE_APP",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
