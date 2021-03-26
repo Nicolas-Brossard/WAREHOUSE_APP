@@ -1,15 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import Logo from './Components/LogoComponent';
-import ConnectionLayout from "./Layouts/ConnectionLayout";
+import LoginLayout from "./Layouts/LoginLayout";
 
 export default function App() {
   return (
     <>
       <Logo />
       <View style={styles.container}>
-        <ConnectionLayout />
+        <LoginLayout />
       </View>
     </>
   );

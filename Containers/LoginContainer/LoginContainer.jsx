@@ -4,7 +4,7 @@ import CustomTextInput from "../../Components/CustomTextInputComponent";
 import {StyleSheet, View} from "react-native";
 import CustomButton from "../../Components/CustomButtonComponent";
 
-const ConnectionContainer = () => {
+const LoginContainer = () => {
 
   const inputs = [
     { name: 'mail', placeholder: 'Votre adresse mail' },
@@ -44,4 +44,4 @@ const styles = StyleSheet.create({
 });
 
 
-export default ConnectionContainer;
+export default LoginContainer;
