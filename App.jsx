@@ -2,13 +2,15 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import Logo from './Components/LogoComponent';
 import LoginLayout from "./Layouts/LoginLayout";
+import NewAccountLayout from "./Layouts/NewAccountLayout";
 
 export default function App() {
   return (
     <>
       <Logo />
       <View style={styles.container}>
-        <LoginLayout />
+        {/*<LoginLayout />*/}
+        <NewAccountLayout />
       </View>
     </>
   );
