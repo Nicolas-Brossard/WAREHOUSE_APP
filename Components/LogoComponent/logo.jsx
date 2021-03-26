@@ -1,7 +1,7 @@
 import React from 'react';
-import {Image, StyleSheet, SafeAreaView} from "react-native";
+import { Image, StyleSheet, SafeAreaView, Text } from 'react-native';
 
-const Logo = () =>
+const Logo = () => (
   <>
     <SafeAreaView style={styles.container}>
       <Image
@@ -10,17 +10,18 @@ const Logo = () =>
       />
     </SafeAreaView>
   </>
-;
-
+);
 const styles = StyleSheet.create({
   container: {
-    height: '25%',
+    height: '15%',
+    margin: '20px',
+    width: 'auto',
   },
   logo: {
     height: '100%',
     resizeMode: 'stretch',
-    aspectRatio: 3/2,
-  }
+    aspectRatio: 3 / 2,
+  },
 });
 
 export default Logo;
