@@ -1,16 +1,15 @@
 import React from 'react';
-import { Image, StyleSheet, SafeAreaView, Text } from 'react-native';
+import { Image, StyleSheet, View} from 'react-native';
 
 const Logo = () => (
-  <>
-    <SafeAreaView style={styles.container}>
-      <Image
-        style={styles.logo}
-        source={require('../../assets/images/logo_warehouse.jpg')}
-      />
-    </SafeAreaView>
-  </>
+  <View style={styles.container}>
+    <Image
+      style={styles.logo}
+      source={require('../../assets/images/logo_warehouse.jpg')}
+    />
+  </View>
 );
+
 const styles = StyleSheet.create({
   container: {
     height: '15%',

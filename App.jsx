@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Logo from './Components/LogoComponent';
+import Label from "./Components/LabelComponent";
 
 export default function App() {
   return (
