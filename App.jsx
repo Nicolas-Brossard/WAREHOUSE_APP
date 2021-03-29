@@ -1,8 +1,9 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import Logo from './Components/LogoComponent';
-import LoginLayout from './Layouts/LoginLayout';
-import NewAccountLayout from './Layouts/NewAccountLayout';
+import LoginLayout from "./Layouts/LoginLayout";
+import NewAccountLayout from "./Layouts/NewAccountLayout";
+import RewardLayout from "./Layouts/RewardLayout";
 import VideoLayout from './Layouts/VideoLayout';
 
 export default function App() {
@@ -10,8 +11,9 @@ export default function App() {
     <>
       <Logo />
       <View style={styles.container}>
-        {/*<LoginLayout />*/}
+        {/* <LoginLayout /> */}  
         {/* <NewAccountLayout /> */}
+        {/* <RewardLayout /> */}
         <VideoLayout />
       </View>
     </>
