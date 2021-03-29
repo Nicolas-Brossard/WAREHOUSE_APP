@@ -9,7 +9,7 @@ const CustomText = (props) => (
 
 const styles = StyleSheet.create({
   container: {
-    margin: '10px',
+    margin: 10,
     backgroundColor: '#fff',
     padding: 10,
   },

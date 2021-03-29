@@ -1,5 +1,5 @@
 import React from 'react';
-import VideoContainer from '../Containers/VideoContainer';
+import VideoContainer from '../../Containers/VideoContainer';
 
 const VideoLayout = () => <VideoContainer />;
 
