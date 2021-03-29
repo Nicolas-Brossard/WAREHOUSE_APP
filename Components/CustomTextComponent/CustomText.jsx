@@ -9,11 +9,9 @@ const CustomText = (props) => (
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     margin: '10px',
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    padding: 10,
   },
 });
 export default CustomText;
