@@ -1,14 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { VideoLayout } from './Layouts';
+import { StyleSheet, View } from 'react-native';
+import Logo from './Components/LogoComponent';
+import LoginLayout from "./Layouts/LoginLayout";
+import NewAccountLayout from "./Layouts/NewAccountLayout";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <StatusBar style="auto" />
-      <VideoLayout />
-    </View>
+    <>
+      <Logo />
+      <View style={styles.container}>
+        {/*<LoginLayout />*/}
+        <NewAccountLayout />
+      </View>
+    </>
   );
 }
 
