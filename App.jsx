@@ -3,6 +3,7 @@ import { StyleSheet, View } from 'react-native';
 import Logo from './Components/LogoComponent';
 import LoginLayout from "./Layouts/LoginLayout";
 import NewAccountLayout from "./Layouts/NewAccountLayout";
+import RewardLayout from "./Layouts/RewardLayout";
 
 export default function App() {
   return (
@@ -10,7 +11,8 @@ export default function App() {
       <Logo />
       <View style={styles.container}>
         {/*<LoginLayout />*/}
-        <NewAccountLayout />
+        {/* <NewAccountLayout /> */}
+        <RewardLayout />
       </View>
     </>
   );
