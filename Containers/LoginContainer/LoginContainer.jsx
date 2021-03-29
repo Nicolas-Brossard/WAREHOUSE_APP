@@ -19,7 +19,7 @@ const LoginContainer = () => {
     <View style={styles.container}>
       <Label title="Connectez-vous" />
 
-      <View style={[styles.container, styles.margin]}>
+      <View style={styles.container}>
         {
           inputs.map((input) => {
             return <CustomTextInput getInputValue={getInputValue} name={input.name} placeholder={input.placeholder}/>
@@ -34,13 +34,11 @@ const LoginContainer = () => {
 
 const styles = StyleSheet.create({
   container: {
+    marginVertical: 30,
     width: '100%',
     alignItems: 'center',
     justifyContent: 'center',
   },
-  margin: {
-    marginVertical: 100,
-  }
 });
 
 

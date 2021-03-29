@@ -5,6 +5,7 @@ const CustomTextInput = ({getInputValue, name, placeholder}) => {
   return(
     <View style={styles.container}>
       <TextInput
+        key={name}
         style={styles.textInput}
         onChangeText={(value) => getInputValue(name, value)}
         placeholder={placeholder}
@@ -18,19 +19,11 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderRadius: 20,
     width: '80%',
-    marginVertical: 15,
-    shadowColor: "#000",
-    shadowOffset: {
-      width: 0,
-      height: 4,
-    },
-    shadowOpacity: 0.30,
-    shadowRadius: 15,
-    elevation: 8,
+    marginVertical: 10,
   },
   textInput: {
-    padding: 12,
-    fontSize: 18,
+    padding: 10,
+    fontSize: 16,
   }
 });
 

@@ -16,18 +16,10 @@ const styles = StyleSheet.create({
   container: {
     borderWidth: 2,
     width: '60%',
-    shadowColor: "#000",
-    shadowOffset: {
-      width: 0,
-      height: 4,
-    },
-    shadowOpacity: 0.30,
-    shadowRadius: 15,
-    elevation: 8,
   },
   text: {
     textAlign: 'center',
-    fontSize: 30,
+    fontSize: 20,
     padding: 8,
   }
 });

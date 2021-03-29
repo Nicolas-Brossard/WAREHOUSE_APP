@@ -22,7 +22,7 @@ const NewAccountContainer = () => {
     <View style={styles.container}>
       <Label title="Créez votre compte" />
 
-      <View style={[styles.container, styles.margin]}>
+      <View style={styles.container}>
         {
           inputs.map((input) => {
             return <CustomTextInput getInputValue={getInputValue} name={input.name} placeholder={input.placeholder}/>
@@ -37,12 +37,10 @@ const NewAccountContainer = () => {
 
 const styles = StyleSheet.create({
   container: {
+    marginVertical: 30,
     width: '100%',
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  margin: {
-    marginVertical: 40,
   }
 });
 
