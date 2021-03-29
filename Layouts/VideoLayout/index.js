@@ -1,3 +1,3 @@
 import VideoLayout from './VideoLayout';
 
-export { VideoLayout };
+export default VideoLayout;

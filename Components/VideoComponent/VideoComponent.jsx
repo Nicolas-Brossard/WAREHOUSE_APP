@@ -22,7 +22,7 @@ const VideoComponent = () => {
 
 const styles = StyleSheet.create({
   video: {
-    width: 320,
+    width: 335,
     height: 200,
   },
 });
