@@ -1,11 +1,11 @@
 import React from 'react';
 import {Image, StyleSheet, View} from "react-native";
 
-const CustomImage = () => {
+const CustomImage = ({urlimage}) => {
   return(
     <View style={styles.container}>
       <Image
-      source={require('../../assets/images/logo_warehouse.jpg')}
+      source={urlimage}
       style={styles.imageReward} 
       />
     </View>
@@ -14,10 +14,10 @@ const CustomImage = () => {
 
 const styles = StyleSheet.create({
   container: {
-    width: '80%',
+    width: '90%',
     display: 'flex',
+    margin: '10px',
     flex: 1,
-
   },
   imageReward: {
     height: '100%',

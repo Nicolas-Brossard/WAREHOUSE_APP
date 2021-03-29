@@ -10,9 +10,9 @@ export default function App() {
     <>
       <Logo />
       <View style={styles.container}>
-        {/*<LoginLayout />*/}
-        {/* <NewAccountLayout /> */}
-        <RewardLayout />
+        {/* <LoginLayout /> */}
+        <NewAccountLayout />
+        {/* <RewardLayout /> */}
       </View>
     </>
   );
