@@ -15,7 +15,8 @@ export default function App() {
         {/* <LoginLayout /> */}
         {/* <NewAccountLayout /> */}
         {/* <RewardLayout /> */}
-        <VideoLayout />
+        {/* <VideoLayout /> */}
+        <QuestionLayout />
       </View>
     </>
   );
