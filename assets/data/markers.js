@@ -25,8 +25,7 @@ const MARKERS = [
     longitude: -1.5582238750833108,
     title: 'Place Royale',
     code: 'quSC8I2KVT',
-    type: 'QuestionLayout'
-    // type: 'BlindTestLayout',
+    type: 'BlindTestLayout',
   },
 ]
 

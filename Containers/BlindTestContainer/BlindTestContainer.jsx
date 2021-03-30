@@ -17,20 +17,21 @@ const icon = { name: 'sc-telegram', type: 'evilicon', color: '#000' };
 const BlindTestContainer = () => {
   return (
     <View style={styles.container}>
-      <Label title={TITLE}></Label>
-      <CustomText message={SUBTITLE} />
-      <AudioComponent />
-      <SubLabelComponent label={QUESTION}></SubLabelComponent>
-      <View>
-        <CustomTextInput
-          getInputValue={getInputValue}
-          name={input.name}
-          placeholder={input.placeholder}
-          iconName={icon.name}
-          iconType={icon.type}
-          iconColor={icon.color}
-        />
+      <Label title={TITLE} />
+      <View style={{ marginVertical: 20 }}>
+        <AudioComponent />
       </View>
+      <SubLabelComponent label={QUESTION} />
+
+      <CustomTextInput
+        getInputValue={getInputValue}
+        name={input.name}
+        placeholder={input.placeholder}
+        iconName={icon.name}
+        iconType={icon.type}
+        iconColor={icon.color}
+      />
+
     </View>
   );
 };

@@ -6,6 +6,7 @@ import RewardLayout from "../../Layouts/RewardLayout";
 import VideoLayout from "../../Layouts/VideoLayout";
 import QuestionLayout from "../../Layouts/QuestionLayout";
 import CompleteVideoLayout from "../../Layouts/CompleteVideoLayout";
+import BlindTestLayout from "../../Layouts/BlindTestLayout";
 
 
 const Stack = createStackNavigator();
@@ -20,7 +21,7 @@ const LoggedNavigation = (props) => (
         name="ScannerQRLayout"
         children={()=><ScannerQRLayout {...props} />}
         options={{
-          title: 'Scanner le QR Code !',
+          title: 'Scannez le QR Code !',
           headerTitleStyle: {
             fontWeight: 'bold',
             fontSize: 20,
@@ -48,17 +49,17 @@ const LoggedNavigation = (props) => (
           }
         }}
       />
-      {/*<Stack.Screen*/}
-      {/*  name="BlindTestLayout"*/}
-      {/*  component={BlindTestLayout}*/}
-      {/*  options={{*/}
-      {/*    title: 'Écoutez attentivement ...',*/}
-      {/*    headerTitleStyle: {*/}
-      {/*      fontWeight: 'bold',*/}
-      {/*      fontSize: 20,*/}
-      {/*    }*/}
-      {/*  }}*/}
-      {/*/>*/}
+      <Stack.Screen
+        name="BlindTestLayout"
+        component={BlindTestLayout}
+        options={{
+          title: 'Écoutez attentivement ...',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+            fontSize: 20,
+          }
+        }}
+      />
       <Stack.Screen
         name="CompleteVideoLayout"
         component={CompleteVideoLayout}
