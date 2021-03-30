@@ -7,6 +7,7 @@ import RewardLayout from './Layouts/RewardLayout';
 import VideoLayout from './Layouts/VideoLayout';
 import QuestionLayout from './Layouts/QuestionLayout';
 import CompleteVideoLayout from './Layouts/CompleteVideoLayout';
+import BlindTestLayout from './Layouts/BlindTestLayout';
 
 export default function App() {
   return (
@@ -18,7 +19,8 @@ export default function App() {
         {/* <RewardLayout /> */}
         {/* <QuestionLayout /> */}
         {/* <VideoLayout /> */}
-        <CompleteVideoLayout />
+        {/* <CompleteVideoLayout /> */}
+        <BlindTestLayout />
       </View>
     </>
   );
