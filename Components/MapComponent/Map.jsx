@@ -2,12 +2,8 @@ import React from 'react';
 import MapView, { Marker } from 'react-native-maps';
 import { StyleSheet, View } from 'react-native';
 
-// Scan QR Code
-const handlePress = () => {
-  console.log('Clicked');
-}
 
-const Map = ({regionCoords, markersCoords}) => (
+const Map = ({navigation, regionCoords, markersCoords}) => (
   <View style={styles.container}>
     <MapView
       initialRegion={{
@@ -21,7 +17,7 @@ const Map = ({regionCoords, markersCoords}) => (
       {
         markersCoords.map((marker) => {
           return <Marker
-            onPress={() => {handlePress()}}
+            onPress={() => { navigation.navigate("ScannerQR") }}
             key={marker.latitude + '_' + marker.longitude}
             title={marker.title}
             coordinate={{

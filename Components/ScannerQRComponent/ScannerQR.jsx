@@ -24,7 +24,7 @@ class ScannerQR extends React.Component {
         <BarCodeScanner
           onBarCodeScanned={this.handleBarCodeScanned}
           barCodeTypes={[BarCodeScanner.Constants.BarCodeType.qr]}
-          style={styles.container}
+          style={styles.cameraContainer}
         />
       </View>
     );
@@ -36,6 +36,12 @@ const styles = StyleSheet.create({
     width: '100%',
     height: '100%',
   },
+  cameraContainer: {
+    marginHorizontal: 0, marginLeft: 0, marginStart: 0,
+    paddingHorizontal: 0, paddingLeft: 0, paddingStart: 0,
+    height: '115%',
+    padding: 0
+  }
 });
 
 export default ScannerQR;

@@ -4,7 +4,7 @@ import CustomTextInput from "../../Components/CustomTextInputComponent";
 import {StyleSheet, View} from "react-native";
 import CustomButton from "../../Components/CustomButtonComponent";
 
-const LoginContainer = () => {
+const LoginContainer = (props) => {
 
   const inputs = [
     { name: 'mail', placeholder: 'Votre adresse mail' },
@@ -15,6 +15,11 @@ const LoginContainer = () => {
     console.log(name, value);
   }
 
+  // Change le statut en connecté, affichage différent pour la navigation
+  const setLogged = () => {
+    props.setStatus && (props.setStatus(!props.logged));
+  }
+
   return(
     <View style={styles.container}>
       <Label title="Connectez-vous" />
@@ -22,12 +27,12 @@ const LoginContainer = () => {
       <View style={styles.container}>
         {
           inputs.map((input) => {
-            return <CustomTextInput getInputValue={getInputValue} name={input.name} placeholder={input.placeholder}/>
+            return <CustomTextInput key={input.name} getInputValue={getInputValue} name={input.name} placeholder={input.placeholder}/>
           })
         }
       </View>
 
-      <CustomButton title="Connexion" />
+      <CustomButton title="Connexion" onPressCustomButton={setLogged} />
     </View>
   )
 }

@@ -13,7 +13,7 @@ const Logo = () => (
 const styles = StyleSheet.create({
   container: {
     height: '15%',
-    marginVertical: 40,
+    marginTop: 40,
     marginHorizontal: 20,
     width: 'auto',
     alignItems: Platform.OS === 'android' && ('center'),

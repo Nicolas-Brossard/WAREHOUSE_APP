@@ -18,17 +18,19 @@ const markersCoords = [
   },
 ]
 
-const MapContainer = () => {
+const MapContainer = (props) => {
   return(
     <View style={styles.container}>
       <Label title="Trouvez les !" />
-      <Map regionCoords={warehouseCoords} markersCoords={markersCoords} />
+      <Label title="Cliquez sur un marqueur pour scanner le QR Code" size={15} />
+      <Map navigation={props.navigation} regionCoords={warehouseCoords} markersCoords={markersCoords} />
     </View>
   )
 }
 
 const styles = StyleSheet.create({
   container: {
+    marginVertical: 30,
     width: '100%',
     alignItems: 'center',
     justifyContent: 'center',
