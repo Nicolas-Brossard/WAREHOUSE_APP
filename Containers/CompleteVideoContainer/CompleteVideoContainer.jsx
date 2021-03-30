@@ -15,12 +15,10 @@ const textStyle = {
 
 const CompleteVideoContainer = () => {
   return (
-    <>
-      <View style={styles.container}>
-        <VideoComponent />
-        <CustomButton customStyle={customColor} textStyle={textStyle} title={BUTTON_TITLE} />
-      </View>
-    </>
+    <View style={styles.container}>
+      <VideoComponent />
+      <CustomButton customStyle={customColor} textStyle={textStyle} title={BUTTON_TITLE} />
+    </View>
   );
 };
 
