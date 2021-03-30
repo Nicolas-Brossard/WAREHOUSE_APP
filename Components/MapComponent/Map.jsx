@@ -4,7 +4,7 @@ import { StyleSheet, View } from 'react-native';
 
 // Scan QR Code
 const handlePress = () => {
-  console.log("Clicked");
+  console.log('Clicked');
 }
 
 const Map = ({regionCoords, markersCoords}) => (
