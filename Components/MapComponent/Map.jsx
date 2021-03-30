@@ -3,7 +3,7 @@ import MapView, { Marker } from 'react-native-maps';
 import { StyleSheet, View } from 'react-native';
 
 
-const Map = ({navigation, regionCoords, markersCoords}) => (
+const Map = ({navigation, regionCoords, markers}) => (
   <View style={styles.container}>
     <MapView
       initialRegion={{
@@ -15,7 +15,7 @@ const Map = ({navigation, regionCoords, markersCoords}) => (
       style={styles.map}
     >
       {
-        markersCoords.map((marker) => {
+        markers.map((marker) => {
           return <Marker
             onPress={() => { navigation.navigate("ScannerQR") }}
             key={marker.latitude + '_' + marker.longitude}

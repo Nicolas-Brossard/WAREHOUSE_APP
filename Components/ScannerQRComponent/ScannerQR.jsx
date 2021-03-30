@@ -2,6 +2,7 @@ import * as React from 'react';
 import { View, StyleSheet } from 'react-native';
 import * as Permissions from 'expo-permissions';
 import { BarCodeScanner } from 'expo-barcode-scanner';
+import { MARKERS } from "../../assets/data/markers";
 
 class ScannerQR extends React.Component {
   async componentDidMount() {
@@ -13,8 +14,10 @@ class ScannerQR extends React.Component {
   };
 
   handleBarCodeScanned = ({ type, data }) => {
-    console.log("call")
-    alert(`Bar code with type ${type} and data ${data} has been scanned!`);
+    const marker = MARKERS.find((marker) => marker.code === data);
+    if (marker) {
+      console.log(marker)
+    }
   };
 
   render() {
