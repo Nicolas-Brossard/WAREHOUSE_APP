@@ -4,6 +4,19 @@ import * as Permissions from 'expo-permissions';
 import { BarCodeScanner } from 'expo-barcode-scanner';
 import { MARKERS } from "../../assets/data/markers";
 
+const styles = StyleSheet.create({
+  container: {
+    width: '100%',
+    height: '100%',
+  },
+  cameraContainer: {
+    marginHorizontal: 0, marginLeft: 0, marginStart: 0,
+    paddingHorizontal: 0, paddingLeft: 0, paddingStart: 0,
+    height: '115%',
+    padding: 0
+  }
+});
+
 class ScannerQR extends React.Component {
   async componentDidMount() {
     await this.getPermissionsAsync();
@@ -16,7 +29,7 @@ class ScannerQR extends React.Component {
   handleBarCodeScanned = ({ type, data }) => {
     const marker = MARKERS.find((marker) => marker.code === data);
     if (marker) {
-      console.log(marker)
+      this.props.navigation.navigate(marker.type);
     }
   };
 
@@ -33,18 +46,5 @@ class ScannerQR extends React.Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    width: '100%',
-    height: '100%',
-  },
-  cameraContainer: {
-    marginHorizontal: 0, marginLeft: 0, marginStart: 0,
-    paddingHorizontal: 0, paddingLeft: 0, paddingStart: 0,
-    height: '115%',
-    padding: 0
-  }
-});
 
 export default ScannerQR;

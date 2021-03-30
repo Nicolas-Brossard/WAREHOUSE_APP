@@ -17,7 +17,7 @@ const Map = ({navigation, regionCoords, markers}) => (
       {
         markers.map((marker) => {
           return <Marker
-            onPress={() => { navigation.navigate("ScannerQR") }}
+            onPress={() => { navigation.navigate("ScannerQRLayout") }}
             key={marker.latitude + '_' + marker.longitude}
             title={marker.title}
             coordinate={{

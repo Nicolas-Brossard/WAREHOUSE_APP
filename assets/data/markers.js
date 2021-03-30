@@ -11,6 +11,22 @@ const MARKERS = [
     longitude: -1.5727438558193125,
     title: 'Warehouse',
     code: 'Wr0MsFQsMo',
+    type: 'VideoLayout',
+  },
+  {
+    latitude: 47.21644694396549,
+    longitude: -1.5488265754173178,
+    title: 'Château des ducs de Bretagne',
+    code: 'DRZSBjzuKp',
+    type: 'QuestionLayout',
+  },
+  {
+    latitude: 47.214619456783765,
+    longitude: -1.5582238750833108,
+    title: 'Place Royale',
+    code: 'quSC8I2KVT',
+    type: 'QuestionLayout'
+    // type: 'BlindTestLayout',
   },
 ]
 
