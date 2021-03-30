@@ -6,6 +6,7 @@ import NewAccountLayout from './Layouts/NewAccountLayout';
 import RewardLayout from './Layouts/RewardLayout';
 import VideoLayout from './Layouts/VideoLayout';
 import QuestionLayout from './Layouts/QuestionLayout';
+import CompleteVideoLayout from './Layouts/CompleteVideoLayout';
 
 export default function App() {
   return (
@@ -15,8 +16,9 @@ export default function App() {
         {/* <LoginLayout /> */}
         {/* <NewAccountLayout /> */}
         {/* <RewardLayout /> */}
+        {/* <QuestionLayout /> */}
         {/* <VideoLayout /> */}
-        <QuestionLayout />
+        <CompleteVideoLayout />
       </View>
     </>
   );
