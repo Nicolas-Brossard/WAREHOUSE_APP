@@ -15,18 +15,16 @@ const icon = { name: 'sc-telegram', type: 'evilicon', color: '#000' };
 const QuestionContainer = () => {
   return (
     <View style={styles.container}>
-      <Label title={QUESTION_TITLE}></Label>
+      <Label title={QUESTION_TITLE} />
       <CustomText message={TEXT_QR} />
-      <View>
-        <CustomTextInput
-          getInputValue={getInputValue}
-          name={input.name}
-          placeholder={input.placeholder}
-          iconName={icon.name}
-          iconType={icon.type}
-          iconColor={icon.color}
-        />
-      </View>
+      <CustomTextInput
+        getInputValue={getInputValue}
+        name={input.name}
+        placeholder={input.placeholder}
+        iconName={icon.name}
+        iconType={icon.type}
+        iconColor={icon.color}
+      />
     </View>
   );
 };

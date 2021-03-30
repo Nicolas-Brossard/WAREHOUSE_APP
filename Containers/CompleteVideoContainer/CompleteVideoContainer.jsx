@@ -6,11 +6,11 @@ import CustomButton from "../../Components/CustomButtonComponent";
 
 const customColor = {
   'position': 'absolute',
-  'bottom': '20px',
+  'bottom': 20,
 };
 
 const textStyle = {
-  'fontSize': '12px',
+  'fontSize': 12,
 }
 
 const CompleteVideoContainer = () => {

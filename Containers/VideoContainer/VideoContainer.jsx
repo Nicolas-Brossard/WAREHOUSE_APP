@@ -7,13 +7,13 @@ import VideoComponent from '../../Components/VideoComponent';
 
 const VideoContainer = () => {
   return (
-    <>
+    <View style={styles.container}>
       <Label title={VIDEO_TILE} />
       <View style={styles.container}>
         <VideoComponent />
         <CustomText message={TEXT_VIDEO} />
       </View>
-    </>
+    </View>
   );
 };
 

@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 
 const CustomText = (props) => (
   <View style={styles.container}>
-    <Text style={styles.text}>{props.message}</Text>
+    <Text>{props.message}</Text>
   </View>
 );
 
@@ -14,9 +14,6 @@ const styles = StyleSheet.create({
     margin: 10,
     backgroundColor: '#fff',
     padding: 10,
-  },
-  text: {
-    width: '100%',
   },
 });
 export default CustomText;
