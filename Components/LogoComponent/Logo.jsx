@@ -12,11 +12,11 @@ const Logo = () => (
 
 const styles = StyleSheet.create({
   container: {
+    alignSelf: 'center',
     height: '15%',
     marginTop: 40,
     marginHorizontal: 20,
-    width: 'auto',
-    alignItems: Platform.OS === 'android' && ('center'),
+    alignItems: Platform.OS === 'android' && 'center',
   },
   logo: {
     height: '100%',
