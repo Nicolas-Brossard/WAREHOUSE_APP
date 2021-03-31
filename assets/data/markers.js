@@ -27,6 +27,13 @@ const MARKERS = [
     code: 'quSC8I2KVT',
     type: 'BlindTestLayout',
   },
+  {
+    latitude: 47.2064883948138,
+    longitude: -1.5645832059985256,
+    title: 'Les Machines de l\'Île',
+    code: 'buZC112KzA',
+    type: 'YoutubeVideoLayout',
+  },
 ]
 
 export { WAREHOUSE_COORDS, MARKERS };
