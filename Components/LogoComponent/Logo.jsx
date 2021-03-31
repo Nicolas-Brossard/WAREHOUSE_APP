@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, StyleSheet, View } from 'react-native';
+import { Image, StyleSheet, View, Platform } from 'react-native';
 
 const Logo = () => (
   <View style={styles.container}>
@@ -13,13 +13,15 @@ const Logo = () => (
 const styles = StyleSheet.create({
   container: {
     height: '15%',
-    margin: '20px',
+    marginTop: 40,
+    marginHorizontal: 20,
     width: 'auto',
+    alignItems: Platform.OS === 'android' && ('center'),
   },
   logo: {
     height: '100%',
     resizeMode: 'stretch',
-    aspectRatio: 3 / 2,
+    aspectRatio: 2,
   },
 });
 

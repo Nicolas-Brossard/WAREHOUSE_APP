@@ -6,7 +6,7 @@ const CustomImage = ({urlimage}) => {
     <View style={styles.container}>
       <Image
       source={urlimage}
-      style={styles.imageReward} 
+      style={styles.imageReward}
       />
     </View>
   )
@@ -14,9 +14,9 @@ const CustomImage = ({urlimage}) => {
 
 const styles = StyleSheet.create({
   container: {
-    width: '90%',
+    width: '100%',
     display: 'flex',
-    margin: '10px',
+    margin: 10,
     flex: 1,
   },
   imageReward: {

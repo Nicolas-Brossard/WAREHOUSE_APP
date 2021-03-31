@@ -13,6 +13,7 @@ const CustomTextInput = ({
   return (
     <View style={styles.container}>
       <TextInput
+        key={name}
         style={styles.textInput}
         inlineImageLeft="username"
         onChangeText={(value) => getInputValue(name, value)}
@@ -33,22 +34,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderWidth: 2,
     borderRadius: 20,
-    width: 'auto',
-    marginVertical: 15,
-    shadowColor: '#000',
-    shadowOffset: {
-      width: 0,
-      height: 4,
-    },
-    shadowOpacity: 0.3,
-    shadowRadius: 15,
-    elevation: 8,
+    width: '80%',
+    marginVertical: 10,
   },
   textInput: {
-    width: '80%',
-    padding: 12,
-    fontSize: 18,
-  },
+    paddingVertical: 8,
+    paddingHorizontal: 15,
+    fontSize: 16,
+  }
 });
 
 export default CustomTextInput;

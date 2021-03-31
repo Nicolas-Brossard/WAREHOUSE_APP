@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { ScrollView, View, StyleSheet } from 'react-native';
 import Label from '../../Components/LabelComponent';
 import { QUESTION_TITLE, TEXT_QR } from './messages';
 import CustomText from '../../Components/CustomTextComponent';
@@ -14,20 +14,18 @@ const icon = { name: 'sc-telegram', type: 'evilicon', color: '#000' };
 
 const QuestionContainer = () => {
   return (
-    <View style={styles.container}>
-      <Label title={QUESTION_TITLE}></Label>
+    <ScrollView contentContainerStyle={styles.container}>
+      <Label title={QUESTION_TITLE} />
       <CustomText message={TEXT_QR} />
-      <View>
-        <CustomTextInput
-          getInputValue={getInputValue}
-          name={input.name}
-          placeholder={input.placeholder}
-          iconName={icon.name}
-          iconType={icon.type}
-          iconColor={icon.color}
-        />
-      </View>
-    </View>
+      <CustomTextInput
+        getInputValue={getInputValue}
+        name={input.name}
+        placeholder={input.placeholder}
+        iconName={icon.name}
+        iconType={icon.type}
+        iconColor={icon.color}
+      />
+    </ScrollView>
   );
 };
 const styles = StyleSheet.create({
