@@ -7,12 +7,13 @@ import VideoLayout from "../../Layouts/VideoLayout";
 import QuestionLayout from "../../Layouts/QuestionLayout";
 import CompleteVideoLayout from "../../Layouts/CompleteVideoLayout";
 import BlindTestLayout from "../../Layouts/BlindTestLayout";
+import YoutubeVideoLayout from "../../Layouts/YoutubeVideoLayout";
 
 
 const Stack = createStackNavigator();
 
 const LoggedNavigation = (props) => (
-    <Stack.Navigator>
+    <Stack.Navigator screenOptions={{animationEnabled: false}}>
       <Stack.Screen
         name="MapLayout"
         component={MapLayout}
@@ -32,6 +33,17 @@ const LoggedNavigation = (props) => (
         component={VideoLayout}
         options={{
           title: 'Regardez bien ...',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+            fontSize: 20,
+          }
+        }}
+      />
+      <Stack.Screen
+        name="YoutubeVideoLayout"
+        component={YoutubeVideoLayout}
+        options={{
+          title: 'Surprise !',
           headerTitleStyle: {
             fontWeight: 'bold',
             fontSize: 20,
