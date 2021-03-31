@@ -4,8 +4,11 @@ import { ScrollView, View, StyleSheet } from 'react-native';
 import Label from '../../Components/LabelComponent';
 import CustomText from '../../Components/CustomTextComponent';
 import VideoComponent from '../../Components/VideoComponent';
+import CustomButton from "../../Components/CustomButtonComponent";
+import {useNavigation} from "@react-navigation/core";
 
 const VideoContainer = () => {
+  const navigation = useNavigation();
   return (
     <ScrollView contentContainerStyle={styles.container} >
       <Label title={VIDEO_TILE} />
@@ -13,6 +16,7 @@ const VideoContainer = () => {
         <VideoComponent />
         <CustomText message={TEXT_VIDEO} />
       </View>
+      <CustomButton title="Récompense" onPressCustomButton={() => { navigation.navigate('RewardLayout') }} />
     </ScrollView>
   );
 };
